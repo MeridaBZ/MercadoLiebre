@@ -75,10 +75,10 @@ header nav{
     font-size: 12px;
     margin-left: 20px;
 }
-header ul li{
+header .navbar ul li{
     list-style-type: none;
 }
-header ul li a{
+header .navbar ul li a{
     text-decoration: none;
     color: var(--negro);
 }
@@ -185,4 +185,14 @@ footer .footer-icon{
 }
 footer .copyright{
     text-align: center;
+}
+
+/*TABLET*/
+    @media (min-width:461px) {
+
+}
+
+/*DESKTOP*/
+@media (min-width:769px) {
+
 }
