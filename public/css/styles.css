@@ -1,0 +1,188 @@
+:root{
+    /*COLORES*/
+    --amarillo:#EAC926;
+    --celeste:#1259c3;
+    --azul:#03264C;
+    --grisClaro:#ebebeb;
+    --grisOscuro:#666;
+    --verde:#39b54a;
+    --negro: #000000;
+
+    /*TIPOGRAFIAS*/
+    --roboto: 'Roboto', sans-serif;
+}
+
+/*GENERAL*/
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--roboto);
+    background-color: var(--grisClaro);
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 12px;
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descuento{
+    width: 70%;
+    font-size: 16px;
+    font-weight: normal;
+}
+.descripcion{
+    color: #666;
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*HEADER*/
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+header{
+    background-color: var(--amarillo);
+}
+header div.logo{
+    width: 50%;
+    padding: 10px;
+}
+header .buscador{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: var(--negro);
+}
+header .buscador .input{
+    background-color: var(--grisClaro);
+    border: 1px solid var(--grisOscuro);
+    outline: none;
+    color: var(--grisOscuro);
+    padding: 2px;
+}
+header .buscador .submit{
+    background-color: var(--grisClaro);
+    border: 1px solid var(--grisOscuro);
+    color: var(--grisOscuro);
+    width: 10%;
+}
+div.menu{
+    text-align: center;
+}
+div.menu i{
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    width: 40px;
+}
+div.ultVisita, div.ofertas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*MAIN*/
+.bannerMP img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main section article{
+    background-color: var(--grisClaro);    
+    margin: 10px 0px;
+}
+main section article img{
+    width: 100%;
+}
+main section article i, .descuento{
+    color: var(--verde);
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: var(--grisClaro);
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+main section h3{
+    margin: 20px 0px;
+}
+article div.articulos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid var(--grisClaro);
+    position: relative;
+    padding: 15px;
+}
+
+/*FOOTER*/
+footer .pieDePagina{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+}
+footer .info{
+    padding: 35px 45px 20px;
+    text-align: center;
+}
+footer section .info h2{
+    color: var(--grisOscuro);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+footer .footer-icon{
+    color: var(--celeste);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer .copyright{
+    text-align: center;
+}
